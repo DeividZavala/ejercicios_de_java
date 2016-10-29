@@ -1,0 +1,21 @@
+
+public class ByeCinco {
+	
+	public static int SinCinco(int start, int end)
+    {
+        int count = 0;
+        while (start <= end) {
+          boolean contieneCinco = String.valueOf(start).contains("5");
+          if (!contieneCinco) {count++;}
+          start++;
+        } 
+        return count;
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SinCinco(1,9);
+
+	}
+
+}
